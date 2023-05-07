@@ -8,7 +8,17 @@
     }
 }
 @layer components {
-    .text_color{
+    .text_color {
         @apply text-[#703501]
     }
+
+    .modal {
+        @apply scale-0 transition-transform max-w-[100vw] w-full h-[100vh] top-0 left-0 flex items-center justify-center fixed bg-[rgba(0,0,0,0.5)]
+    }
+
+    .active {
+        @apply scale-[1]
+    }
+
+
 }
