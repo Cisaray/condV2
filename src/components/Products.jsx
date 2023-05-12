@@ -1,11 +1,9 @@
 import React from "react";
 import {Card} from "./card/Card";
-import {debounce} from "lodash";
 
 
 export const Products = () => {
     const [search, setSearch] = React.useState('');
-    const [value, setValue] = React.useState('');
 
     const products = [
         {
@@ -95,17 +93,6 @@ export const Products = () => {
         return item.title.toLowerCase().includes(search.toLowerCase())
     })
 
-    const updateSearchValue = React.useCallback(
-        debounce((str)=>{
-            setSearch(str)
-        }, 500), []
-    )
-
-    const onChangeInput = (event) => {
-        setValue(event.target.value)
-        updateSearchValue(event.target.value)
-    }
-
     return (
         <div className='max-w-full mx-auto'>
             <div className='mt-5 text-center'>
@@ -113,9 +100,9 @@ export const Products = () => {
                     вкусу!</p>
             </div>
             <div className='max-w-[1400px] mt-10 mx-auto text-center'>
-                <input onChange={onChangeInput}
+                <input onChange={(e) => setSearch(e.target.value)}
                        className='border-2 focus:border-[#703501] py-[12px] px-2 w-[300px] mx-auto bg-[#f2dcb1] rounded-xl mt-5 text_color xs:w-[250px]'
-                       type="text" value={value} placeholder='Искать по названию...'/>
+                       type="text" value={search} placeholder='Искать по названию...'/>
                 <div
                     className='grid grid-cols-3 items-center p-5 mt-5 gap-10 lg:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 md:grid-cols-2 sm:grid-cols-1'>
                     {filteredProducts.map((items, idx) =>
