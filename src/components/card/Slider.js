@@ -11,13 +11,13 @@ export const MySlider = ({image1, image2, image3}) => {
     return (
         <Slider {...settings}>
             <div className='max-w-[70%]'>
-                <img className='max-w-full w-full h-auto rotate-90' src={image1} alt="img"/>
+                <img className='max-w-full w-full h-auto rotate-270' src={image1} alt="img"/>
             </div>
             {image2&&<div className='max-w-[70%]'>
-                <img className='max-w-full w-full h-auto rotate-90' src={image2} alt="img"/>
+                <img className='max-w-full w-full h-auto rotate-270' src={image2} alt="img"/>
             </div>}
             {image3&&<div className='max-w-[70%]'>
-                <img className='max-w-full w-full h-auto rotate-90' src={image3} alt="img"/>
+                <img className='max-w-full w-full h-auto rotate-270' src={image3} alt="img"/>
             </div>}
         </Slider>
     )

@@ -50,7 +50,7 @@ export const Home = ({contacts}) => {
                         <div
                             className='h-[100%] rounded-lg bg-[#f2dcb1] flex flex-col items-center shadow-[10px_14px_8px_0px_rgba(27,30,32,0.2)]'>
                             <div>
-                                <img className='max-w-full w-full h-auto rounded-lg' src="/assets/product1.JPG"
+                                <img className='max-w-full w-full h-auto rounded-lg' src="/assets/product1.jpg"
                                      alt="product1"/>
                             </div>
                             <div className='mt-5 pb-3'>
@@ -60,7 +60,7 @@ export const Home = ({contacts}) => {
                         <div
                             className='h-[100%] rounded-lg bg-[#f2dcb1] flex flex-col items-center shadow-[10px_14px_8px_0px_rgba(27,30,32,0.2)]'>
                             <div>
-                                <img className='max-w-full w-full h-auto rounded-lg' src="/assets/product2.JPG"
+                                <img className='max-w-full w-full h-auto rounded-lg' src="/assets/product2.jpg"
                                      alt="product2"/>
                             </div>
                             <div className='mt-5 pb-3'>
@@ -70,7 +70,7 @@ export const Home = ({contacts}) => {
                         <div
                             className='h-[100%] rounded-lg bg-[#f2dcb1] flex flex-col items-center shadow-[10px_14px_8px_0px_rgba(27,30,32,0.2)]'>
                             <div>
-                                <img className='max-w-full w-full h-auto rounded-lg ' src="/assets/product5.JPG"
+                                <img className='max-w-full w-full h-auto rounded-lg ' src="/assets/product3.jpg"
                                      alt="product3"/>
                             </div>
                             <div className='mt-5 pb-3'>
