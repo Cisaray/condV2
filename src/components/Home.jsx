@@ -46,7 +46,7 @@ export const Home = ({contacts}) => {
             {/*section 2*/}
             <section>
                 <div className='max-w-[1040px] mx-auto mt-10 px-5'>
-                    <div className='grid grid-cols-3 items-center gap-10'>
+                    <div className='grid grid-cols-3 items-center gap-10 sm:grid-cols-1'>
                         <div
                             className='h-[100%] rounded-lg bg-[#f2dcb1] flex flex-col items-center shadow-[10px_14px_8px_0px_rgba(27,30,32,0.2)]'>
                             <div>
@@ -89,30 +89,30 @@ export const Home = ({contacts}) => {
                 </div>
             </section>
             {/*Section 3*/}
-            <section ref={contacts} className='mt-20'>
+            <section ref={contacts} className='mt-20 sm:mt-10'>
                 <div className='max-w-[1040px] mx-auto'>
-                    <h1 className='text_color text-center text-[42px]'>Как с нами связаться</h1>
-                    <div className='max-w-[1040px] mx-auto grid grid-cols-2 gap-10 items-center mt-[60px]'>
+                    <h1 className='text_color text-center text-[42px] sm:text-[35px]'>Как с нами связаться</h1>
+                    <div className='max-w-[1040px] mx-auto grid grid-cols-2 gap-10 items-center mt-[60px] sm:grid-cols-1'>
                         <div className='h-[100%] flex flex-col items-center'>
-                            <div className=''>
-                                <img className='max-w-[25%] w-full h-auto mx-auto' src="/assets/phone.svg" alt="phone"/>
+                            <div>
+                                <img className='max-w-[25%] w-full h-auto mx-auto sm:max-w-[20%]' src="/assets/phone.svg" alt="phone"/>
                             </div>
                             <div className='text-center mt-5'>
-                                <p className='text_color font-bold text-[25px]'>Телефон/What's app</p>
+                                <p className='text_color font-bold text-[25px] sm:text-[22px]'>Телефон/What's app</p>
                                 <div>
-                                    <a className='text_color font-medium text-[25px]' href='tel:+79999999999'>+7 999
+                                    <a className='text_color font-medium text-[25px] sm:text-[22px]' href='tel:+79999999999'>+7 999
                                         999-99-99</a>
                                 </div>
                             </div>
                         </div>
                         <div className='h-[100%] flex flex-col items-center'>
-                            <div className=''>
-                                <img className='max-w-[33%] w-full h-auto mx-auto' src="/assets/email.svg" alt="email"/>
+                            <div>
+                                <img className='max-w-[33%] w-full h-auto mx-auto sm:max-w-[20%]' src="/assets/email.svg" alt="email"/>
                             </div>
                             <div className='text-center mt-5'>
-                                <p className='text_color font-bold text-[25px]'>Электронная почта</p>
+                                <p className='text_color font-bold text-[25px] sm:text-[22px]'>Электронная почта</p>
                                 <div>
-                                    <a className='text_color font-medium text-[25px]'
+                                    <a className='text_color font-medium text-[25px]  sm:text-[22px]'
                                        href='mailto:nameSurname@gmail.com'>nameSurname@gmail.com</a>
                                 </div>
                             </div>

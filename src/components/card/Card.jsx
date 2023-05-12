@@ -6,7 +6,7 @@ export const Card = ({title, description, image1, image2, image3}) => {
     return (
         <>
             <div onClick={() => setShow(true)}
-                 className='cursor-pointer max-w-[300px] rounded-lg bg-[#f2dcb1] flex flex-col items-center shadow-[10px_14px_8px_0px_rgba(27,30,32,0.2)] mx-auto'>
+                 className='cursor-pointer max-w-[300px] rounded-lg bg-[#f2dcb1] flex flex-col items-center shadow-[10px_14px_8px_0px_rgba(27,30,32,0.2)] mx-auto h-[100%]'>
                 <div>
                     <img className='max-w-full w-full h-auto rounded-lg' src={image1}
                          alt="product"/>
@@ -22,7 +22,9 @@ export const Card = ({title, description, image1, image2, image3}) => {
                     <div className='flex justify-between items-center'>
                         <h3 className='text-center text_color font-semibold text-[30px] mt-3'>{title}</h3>
                     </div>
-                    <MySlider image1={image1} image2={image2} image3={image3}/>
+                    <div className='max-w-[600px] mx-auto'>
+                        <MySlider image1={image1} image2={image2} image3={image3}/>
+                    </div>
                     <p className='mt-5 text_color font-medium text-[20px] text-justify'>{description}</p>
                 </div>
             </div>
