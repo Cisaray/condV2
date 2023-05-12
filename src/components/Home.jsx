@@ -8,7 +8,7 @@ export const Home = ({contacts}) => {
             {/*Section 1*/}
             <section className='bg-firstBgImg bg-cover bg-center pb-[80px]'>
                 <div className='text-center pt-[100px] max-w-[570px] mx-auto'>
-                    <h2 className='font-semibold text_color text-[40px]'>Пекарня Чудо-Печь</h2>
+                    <h2 className='font-bold text_color text-[40px] italic'>Пекарня Чудо-Печь</h2>
                     <p className='text-[#f0e9e9] mt-6 text-[18px] italic'></p>
                 </div>
                 <div className="grid grid-cols-3 px-[195px] items-center mt-10 gap-10 sm:grid-cols-1 md:px-[30px]">
@@ -54,8 +54,7 @@ export const Home = ({contacts}) => {
                                      alt="product1"/>
                             </div>
                             <div className='mt-5 pb-3'>
-                                <h3 className='text_color text-[24px] font-semibold px-3 text-center'>Название</h3>
-                                <p className='text_color text-[18px] italic mt-3 px-3 text-center'>Описание товара</p>
+                                <h3 className='text_color text-[24px] font-semibold px-3 text-center'>Макаронсы</h3>
                             </div>
                         </div>
                         <div
@@ -65,26 +64,24 @@ export const Home = ({contacts}) => {
                                      alt="product2"/>
                             </div>
                             <div className='mt-5 pb-3'>
-                                <h3 className='text_color text-[24px] font-semibold px-3 text-center'>Название</h3>
-                                <p className='text_color text-[18px] italic mt-3 px-3 text-center'>Описание товара</p>
+                                <h3 className='text_color text-[24px] font-semibold px-3 text-center'>Фруктовое Безе</h3>
                             </div>
                         </div>
                         <div
                             className='h-[100%] rounded-lg bg-[#f2dcb1] flex flex-col items-center shadow-[10px_14px_8px_0px_rgba(27,30,32,0.2)]'>
                             <div>
-                                <img className='max-w-full w-full h-auto rounded-lg' src="/assets/product3.JPG"
+                                <img className='max-w-full w-full h-auto rounded-lg ' src="/assets/product5.JPG"
                                      alt="product3"/>
                             </div>
                             <div className='mt-5 pb-3'>
-                                <h3 className='text_color text-[24px] font-semibold px-3 text-center'>Название</h3>
-                                <p className='text_color text-[18px] italic mt-3 px-3 text-center'>Описание товара</p>
+                                <h3 className='text_color text-[24px] font-semibold px-3 text-center'>Лимонный макаронс</h3>
                             </div>
                         </div>
                     </div>
                     <div className='text-center'>
                         <Link to='/products'>
                             <button
-                                className='text_color px-[36px] font-semibold py-[12px] bg-[#f2dcb1] rounded-lg mt-10 border-2 border-[#703501] hover:bg-[#703501] hover:text-[#f2dcb1] transition-colors '>Показать
+                                className='text_color px-[36px] font-semibold py-[12px] bg-[#f2dcb1] rounded-lg mt-10 hover:bg-[#703501] hover:text-[#f2dcb1] transition-colors '>Показать
                                 весь каталог
                             </button>
                         </Link>
@@ -103,7 +100,7 @@ export const Home = ({contacts}) => {
                             <div className='text-center mt-5'>
                                 <p className='text_color font-bold text-[25px]'>Телефон/What's app</p>
                                 <div>
-                                    <a className='text_color font-medium text-[32px]' href='tel:+79999999999'>+7 999
+                                    <a className='text_color font-medium text-[25px]' href='tel:+79999999999'>+7 999
                                         999-99-99</a>
                                 </div>
                             </div>
@@ -116,7 +113,7 @@ export const Home = ({contacts}) => {
                                 <p className='text_color font-bold text-[25px]'>Электронная почта</p>
                                 <div>
                                     <a className='text_color font-medium text-[25px]'
-                                       href='tel:+79999999999'>nameSurname@gmail.com</a>
+                                       href='mailto:nameSurname@gmail.com'>nameSurname@gmail.com</a>
                                 </div>
                             </div>
                         </div>

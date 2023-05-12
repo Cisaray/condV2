@@ -13,11 +13,14 @@
     }
 
     .modal {
-        @apply scale-0 transition-transform max-w-[100vw] w-full h-[100vh] top-0 left-0 flex items-center justify-center fixed bg-[rgba(0,0,0,0.5)]
+        @apply scale-0 transition-transform overflow-hidden max-w-[100vw] w-full h-[100vh] top-0 left-0 flex items-center justify-center fixed bg-[rgba(0,0,0,0.5)]
     }
 
     .active {
         @apply scale-[1]
+    }
+    .header_link {
+        @apply relative text-xl text-[#9e480b] hover:text-[#823804] after:absolute after:h-[1px] after:w-full after:left-0 after:-bottom-1 after:bg-[#823804] after:scale-0 hover:after:scale-100 after:transition-transform
     }
 
 
