@@ -14,7 +14,7 @@ module.exports = {
             },
             backgroundImage: {
                 mainBg: '#f0e5d1',
-                firstBgImg: 'url(../public/assets/bg1.jpg)'
+                firstBgImg: 'url(../public/assets/bg1.JPG)'
             },
             rotate: {
                 '270': '270deg'
