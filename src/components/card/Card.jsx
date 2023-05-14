@@ -21,6 +21,9 @@ export const Card = ({title, description, image1, image2, image3}) => {
                      className="modal_content p-5 rounded-xl bg-amber-50 max-w-[1000px] overflow-auto">
                     <div className='flex justify-between items-center'>
                         <h3 className='text-center text_color font-semibold text-[30px] mt-3'>{title}</h3>
+                        <div onClick={()=>setShow(false)} className='max-w-[5%] cursor-pointer'>
+                            <img className='max-w-full w-full h-auto' src="/assets/closeIcon.svg" alt="close"/>
+                        </div>
                     </div>
                     <div className='max-w-[600px] mx-auto'>
                         <MySlider image1={image1} image2={image2} image3={image3}/>
